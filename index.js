@@ -13,3 +13,14 @@ closeModal.addEventListener('click', () => {
 
 
 //take data from form to create a new party element
+
+const getEvents = async () => {
+    
+    const events = await fetch('https://fsa-crud-2aa9294fe819.herokuapp.com/api/2310-fsa-et-web-pt-sf-b-herbert/events');
+    const jsonEventsResponse = await events.json();
+    console.log("JSON RESPONSE:", jsonEventsResponse);
+   
+
+}
+
+getEvents()
