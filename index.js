@@ -18,9 +18,13 @@ const getEvents = async () => {
     
     const events = await fetch('https://fsa-crud-2aa9294fe819.herokuapp.com/api/2310-fsa-et-web-pt-sf-b-herbert/events');
     const jsonEventsResponse = await events.json();
-    console.log("JSON RESPONSE:", jsonEventsResponse);
-   
+    console.log("JSON RESPONSE:", jsonEventsResponse.data[1]); //returns first element of the array
+}
+getEvents();
+
+const createEvent = (events) => {
+
+    const eventList = [];
+  
 
 }
-
-getEvents()
