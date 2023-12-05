@@ -12,25 +12,12 @@
         <h2>Party List</h2>
         <div class="containerRow">
             <div class="RowElement">
-                <h4>Party 1</h4>
-                <ul id="nameList">
-                    <li>Name</li>
-                </ul>
-            </div>
-            <div class="RowElement">
-                <h4>Party 1</h4>
-                <ul id="nameList">
-                    <li>Name</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="containerRow">
-            <div class="RowElement">
-                <h4>Party 1</h4>
-                <ul id="nameList">
-                    <li>Name</li>
-                </ul>
+                <h4>Party Name</h4>
+                <ul id="eventList">
+                    <li>name</li>
+                    <li>Location</li>
+                    <li>Description</li>
+                 </ul>
             </div>
         </div>
 
@@ -44,8 +31,19 @@
                 <h1>Create a New Party</h1>
                 <div id="form">
                     <form>
-                        <label for="fname">Party Name</label>
-                        <input type="text" id="fname" name="fname"
+                        <label for="pname">Party Name</label>
+                        <input type="text" id="fname" name="pname"
+                        value="">
+
+                        <label for="date">Date</label>
+                        <input type="date" id="eventDate" name="pdate"
+                        value="">
+
+                        <label for="location">Location</label>
+                        <input type="text" id="loc" name="ploc"
+                        value="">
+                        <label for="description">Description</label>
+                        <input type="text" id="des" name="pdes"
                         value="">
 
 
@@ -60,6 +58,6 @@
 
     </div>
 
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
